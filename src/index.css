@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .pending{
+    @apply p-2
+}
+.active{
+    @apply p2
+}
+.transition{
+    @apply p3
+} */
