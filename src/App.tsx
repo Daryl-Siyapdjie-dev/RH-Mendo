@@ -41,13 +41,13 @@ const router =createBrowserRouter([
 
       },
       {
-        path: '/Kanban',
+        path: 'Kanban',
         element: <Kanban/>,
         errorElement: <ErrorPage />,
 
       },
       {
-        path: '/finances',
+        path: 'finances',
         element: <Finances/>,
         errorElement: <ErrorPage />,
 

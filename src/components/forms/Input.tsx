@@ -2,7 +2,7 @@ interface inputProps{
     type:'text' | 'password' | 'email';
     placeholder:string;
     value:string;
-    onChange:(value:string)=>void;
+    onChange:(e:string)=>void;
 }
 export function Input({type,placeholder, value, onChange}:inputProps ){
     return <div>
