@@ -15,3 +15,27 @@ export interface Action {
     payload: string;
    }
       
+export interface IUser{
+    matricule: string;
+    password: string;
+    email: string;
+    telephone: number;
+    statut: string;
+    poste: string;
+    role: string;
+    roleIdrole: number;
+    idpersonnel: number;
+    nom: string;
+    prifile: string;
+    prenom: string;
+    sexe: string;
+    supprimer: unknown;
+    modifier: unknown;
+    _id:string;
+
+  }
+export type Id = string |number
+  export interface column{
+    id:Id;
+    title:string
+  }

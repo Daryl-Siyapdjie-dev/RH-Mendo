@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { Bell, CashCoin, ChevronDown, Folder, HouseDoor, Kanban, People, TextRight } from "react-bootstrap-icons";
+
+import {  CashCoin,  Folder, HouseDoor, Kanban, People, TextRight } from "react-bootstrap-icons";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
+import { Header } from "./Header";
 
 
 export function Layout() {
@@ -24,18 +26,7 @@ export function Layout() {
  const location=useLocation();
     return (
       <div>
-        <div className=" bg-white h-20 flex justify-between items-center text-gray-700  px-12">
-          <div className=" order-first w-40">   <img src="/logo1.svg" alt="" /></div>
-          <div className=" flex order-last items-center">
-            <Bell/>
-            <div className=" flex pl-9 items-center">
-              <span><img src="/profile1.jpeg" alt="" className="w-12 h-12 rounded-full"/></span>
-              <span className="px-3">parfait kom</span>
-              <ChevronDown/>
-            </div>
-          </div>
-     
-        </div>
+       <Header/>
 
         <div className="flex gap-4">
           <header
