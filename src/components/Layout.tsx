@@ -21,14 +21,14 @@ export function Layout() {
   {name:"Kanban", NavLink:"Kanban", icon:Kanban, margin:true},
   {name:"finances", NavLink:"finances", icon:CashCoin},
   
- ];
+ ]
  const[open,setOpen]=useState(true);
  const location=useLocation();
     return (
-      <div>
+      <div className="bg-bgcontaint ">
        <Header/>
 
-        <div className="flex gap-4">
+        <div className="flex gap-4  ">
           <header
             className={`flex-none
                ${

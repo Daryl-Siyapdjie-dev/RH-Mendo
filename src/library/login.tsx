@@ -6,6 +6,34 @@ interface LoginData {
  password: string;
 }
 
+interface User {
+  _id: string;
+  matricule: string;
+  password: string;
+  email: string;
+  idpersonnel: number;
+  nom: string;
+  personnelcol: string;
+  prenom: string;
+  sexe: string;
+  telephone: number;
+  statut: string;
+  poste: string;
+  role: string;
+  roleIdrole: number;
+  createdAt: string;
+  updatedAt: string;
+  __v: number;
+ }
+ 
+ interface ApiResponse {
+  message: string;
+  token: string;
+  user: User;
+ }
+ 
+ 
+
 export  const Connecter = async ({ matricule, email, password }: LoginData, navigate: NavigateFunction) => {
  const items: LoginData = { matricule, email, password };
  const result = await fetch("http://localhost:2727/users/login", {
@@ -21,7 +49,7 @@ export  const Connecter = async ({ matricule, email, password }: LoginData, navi
    throw new Error(`Erreur HTTP ! status: ${result.status}`);
  }
 
- const data = await result.json();
+ const data: ApiResponse  = await result.json();
  localStorage.setItem("user-info", JSON.stringify(data));
  navigate("/DashBoard");
 }

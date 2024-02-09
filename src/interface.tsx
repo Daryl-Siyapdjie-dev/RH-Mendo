@@ -39,3 +39,23 @@ export type Id = string |number
     id:Id;
     title:string
   }
+  
+export  enum EtatTache {
+    AFAIRE = 'à faire',
+    ENCOURS = 'en cours',
+    TERMINEE = 'terminée'
+  }
+  
+export  interface IColonne {
+    id: string;
+    titre: string;
+    etat: EtatTache;
+    taches: ITache[];
+  }
+export interface ITache {
+    _id: string;
+    description: string;
+    nomProjet: string;
+    etat: EtatTache;
+    colmunId?: string;
+  }

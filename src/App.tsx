@@ -42,7 +42,7 @@ const router =createBrowserRouter([
       },
       {
         path: 'Kanban',
-        element: <Kanban/>,
+        element: <Kanban />,
         errorElement: <ErrorPage />,
 
       },
@@ -63,7 +63,8 @@ const router =createBrowserRouter([
 function App() {
 
   return (
-    <> <RouterProvider router={router}/>
+    < > 
+    <div className='bg-bgcontaint'><RouterProvider router={router}  /></div>
       
     </>
   )
