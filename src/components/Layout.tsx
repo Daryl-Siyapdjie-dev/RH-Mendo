@@ -25,7 +25,7 @@ export function Layout() {
  const[open,setOpen]=useState(true);
  const location=useLocation();
     return (
-      <div className="bg-bgcontaint ">
+      <div className="">
        <Header/>
 
         <div className="flex gap-4  ">
@@ -74,7 +74,7 @@ export function Layout() {
             </nav>
           </header>
 
-          <div className="flex-1">
+          <div className="flex-1 bg-bgcontaint ">
             <Outlet />
           </div>
         </div>

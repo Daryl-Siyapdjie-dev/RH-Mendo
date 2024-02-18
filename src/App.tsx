@@ -64,7 +64,7 @@ function App() {
 
   return (
     < > 
-    <div className='bg-bgcontaint'><RouterProvider router={router}  /></div>
+    <RouterProvider router={router}  />
       
     </>
   )

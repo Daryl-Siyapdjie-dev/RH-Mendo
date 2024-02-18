@@ -6,12 +6,16 @@ export default {
   ],
   theme: {
     extend: {
+      
       colors: {
         'navbg': '#ECECFF',
         'hovericone': '#894AD1',
         'bgcontaint': '#F8F8FF',
         
 
+      },
+      gridTemplateColumns: {
+        '1/5':"1fr 5fr"
       }
     },
   },

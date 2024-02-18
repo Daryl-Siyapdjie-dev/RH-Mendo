@@ -5,7 +5,7 @@ interface ModalProps {
  export function Modal({ setOpenModal }: ModalProps) {
   return (
     <div className="fixed z-10 inset-0 overflow-y-auto">
-    <div className="flex items-end justify-center min-h-screen">
+    <div className="flex items-center justify-center min-h-screen">
       <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
       <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full">
         <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
@@ -35,7 +35,7 @@ interface ModalProps {
                   />
                 <label htmlFor="poste" className="mb-2 text-gray-700">Poste :</label>
                 <input type="text"
-                 id="poste" className="mb-2 input"
+                 id="p" className="mb-2 input"
                   />
                 <div className="flex items-center ">
                 <div>
